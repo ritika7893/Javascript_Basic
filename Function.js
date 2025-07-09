@@ -52,3 +52,13 @@ const repeat=(task,times)=>{
    
 };
 repeat(()=> console.log("Doing task ...."),3)
+function CustomFilter(arr,fn){
+    result=[]
+    for(let i of arr){
+        if(fn(i))
+        result.push(i)
+    }
+    return result
+}
+res=CustomFilter([1,3,34,5,6,78,3,12,],n=>n%2==0)
+console.log(res
