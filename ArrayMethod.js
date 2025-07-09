@@ -27,3 +27,32 @@ console.log(contain_i)
 arr=[1,3,4,54,5]
 max=arr.reduce((a,b)=>a>b?a:b)
 console.log(max)
+let arr = [1, 2, 3, 4, 5, 6];
+
+// Add 24 to the end
+arr.push(24);
+console.log(arr); // [1, 2, 3, 4, 5, 6, 24]
+
+// Remove the last element
+arr.pop();
+console.log(arr); // [1, 2, 3, 4, 5, 6]
+
+// Remove the first element
+arr.shift();
+console.log(arr); // [2, 3, 4, 5, 6]
+
+// Add 90 to the beginning
+arr.unshift(90);
+console.log(arr); // [90, 2, 3, 4, 5, 6]
+
+// Copy first 5 elements (non-destructive)
+let x = arr.slice(0, 5);
+console.log(x); // [90, 2, 3, 4, 5]
+
+// Copy first 3 elements
+let y = arr.slice(0, 3);
+console.log(y); // [90, 2, 3]
+
+// Remove 2 elements starting from index 1
+arr.splice(1, 2);
+console.log(arr); // [90, 4, 5, 6]
