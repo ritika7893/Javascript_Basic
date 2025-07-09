@@ -61,4 +61,4 @@ function CustomFilter(arr,fn){
     return result
 }
 res=CustomFilter([1,3,34,5,6,78,3,12,],n=>n%2==0)
-console.log(res
+console.log(res)
