@@ -17,7 +17,7 @@ console.log(Object.keys(user))
 console.log(Object.values(user))
 console.log(Object.entries(user))
 
-
+// Object Destructuring:Extract values from an object into variables easily.
 const user = {
   name: "Riya",
   age: 21,
