@@ -45,3 +45,10 @@ const func=(a,b,operation)=>
 };
 const add=(a,b)=>a+b;
 console.log(func(8,123,add))
+const repeat=(task,times)=>{
+    for(let i=0;i<times;i++){
+       task(); 
+    }
+   
+};
+repeat(()=> console.log("Doing task ...."),3)
