@@ -36,3 +36,12 @@ const factorial=(num)=>{
     return fact;
 };
 console.log(factorial(5))
+const double=n=>n*n
+console.log(double(5))
+//Callback Function
+const func=(a,b,operation)=>
+{
+   return operation(a,b) 
+};
+const add=(a,b)=>a+b;
+console.log(func(8,123,add))
